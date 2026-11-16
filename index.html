@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MPI Matematika – SPLTV Kelas X</title>
+<style>
+:root{--navy:#0b2a5b;--blue:#2f7fd6;--sky:#e6f1fd;--bg:#f5f9ff;--card:#fff;--tx:#14233f;--or:#ff8a1f;--ok:#1a9a52;--bad:#d64545;--bd:#cfe0f5;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0a1428;--card:#122243;--tx:#e8eefb;--sky:#183059;--bd:#2a4372;--navy:#0a1a3a;color-scheme:dark}}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:"Trebuchet MS","Segoe UI",Verdana,sans-serif;background:var(--bg);color:var(--tx);line-height:1.55}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--navy);color:#fff;display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:8px 14px}
+header b{margin-right:auto;font-size:1.02rem}
+nav button,.btn{font:inherit;border:0;border-radius:10px;padding:8px 14px;cursor:pointer;background:var(--sky);color:var(--navy);font-weight:700}
+nav button{background:transparent;color:#fff}nav button:hover,nav button.on{background:var(--or);color:#fff}
+.btn.p{background:var(--or);color:#fff}.btn.n{background:var(--navy);color:#fff}.btn:disabled{opacity:.4;cursor:not-allowed}
+main{max-width:980px;margin:0 auto;padding:16px}
+section{display:none}section.on{display:block;animation:in .35s ease}
+@keyframes in{from{opacity:0;transform:translateX(14px)}to{opacity:1;transform:none}}
+.hero{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;border-radius:22px;padding:26px;display:grid;grid-template-columns:1.2fr 1fr;gap:18px;align-items:center}
+.hero h1{margin:.2em 0;font-size:clamp(1.4rem,4vw,2.2rem);line-height:1.15}.hero small{color:#ffd9ae;font-weight:700}
+.scene{background:#fff2;border:2px dashed #fff6;border-radius:18px;padding:14px;text-align:center;font-size:2.2rem}
+.scene div{font-size:.85rem;margin-top:6px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}}
+.menus{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:16px}@media(max-width:600px){.menus{grid-template-columns:1fr}}
+.menu{background:var(--card);border:2px solid var(--bd);border-radius:20px;padding:22px;text-align:left;cursor:pointer;font:inherit;color:var(--tx);transition:.2s}
+.menu:hover{border-color:var(--or);transform:translateY(-3px)}.menu span{font-size:2.4rem}.menu h2{margin:.2em 0;color:var(--blue)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:16px;margin:12px 0}
+.tx{display:inline-block;background:var(--sky);border:2px dashed var(--blue);border-radius:12px;padding:10px 14px;margin:5px;font-size:1.05rem}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.tabs .btn.on{background:var(--navy);color:#fff}
+input[type=text],textarea,select{font:inherit;width:100%;padding:8px 10px;border:2px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);margin:4px 0}
+input.s{width:110px;display:inline-block}
+.fb{margin-top:8px;font-weight:700}.ok{color:var(--ok)}.no{color:var(--bad)}.pop{animation:pop .5s}
+@keyframes pop{50%{transform:scale(1.08)}}
+.step{background:var(--sky);border-left:5px solid var(--or);border-radius:10px;padding:10px 14px;margin:8px 0;animation:in .3s}
+.bar{height:12px;background:var(--sky);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--or);transition:width .4s}
+.opt{display:flex;gap:8px;align-items:flex-start;padding:8px;border:2px solid var(--bd);border-radius:10px;margin:6px 0;cursor:pointer}
+table{border-collapse:collapse;width:100%}td,th{border:1px solid var(--bd);padding:6px 8px;text-align:center}th{background:var(--sky)}
+.conf{position:fixed;top:-30px;font-size:1.6rem;animation:fall 3s linear forwards;z-index:9;pointer-events:none}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+.big{font-size:2.6rem;font-weight:800;color:var(--or)}
+details{margin:6px 0}summary{cursor:pointer;font-weight:700}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--or)}
+</style></head><body>
+<header><b>📐 MPI SPLTV · Kelas X</b><nav><button onclick="show('home')">🏠 Beranda</button><button onclick="show('materi')">📚 Materi</button><button onclick="show('tka')">📝 Soal TKA</button><button onclick="show('help')">❓ Petunjuk</button></nav></header>
+<main>
+<section id="home" class="on">
+<div class="hero"><div><small>Kelas X SMA</small><h1>MEDIA PEMBELAJARAN INTERAKTIF MATEMATIKA</h1><h2 style="margin:.2em 0;font-size:1.1rem">SISTEM PERSAMAAN LINEAR TIGA VARIABEL (SPLTV)</h2><p>Belajar memahami dan menyelesaikan masalah nyata menggunakan Sistem Persamaan Linear Tiga Variabel.</p></div>
+<div class="scene">👦🍞 👧🥛 🧒🍩<div>Tiga siswa bertransaksi di kantin sekolah: roti, susu kotak, donat, dan minuman lain 🏫</div></div></div>
+<div class="menus"><button class="menu" onclick="show('materi')"><span>📚</span><h2>MATERI KONTEKSTUAL</h2>Tiga masalah nyata di kantin dan koperasi, dengan pembahasan bertahap.</button>
+<button class="menu" onclick="show('tka')"><span>📝</span><h2>SOAL TKA</h2>Lima soal HOTS dengan lima bentuk berbeda dan skor akhir.</button></div>
+<div class="card" id="lastres"></div></section>
+
+<section id="materi"><h2>📚 Materi Kontekstual</h2><p>Amati gambar, susun model, lalu periksa jawabanmu. Pembahasan terbuka setelah kamu mencoba.</p><div id="mlist"></div></section>
+
+<section id="tka"><div id="tkabox"></div></section>
+
+<section id="help"><h2>❓ Petunjuk Penggunaan</h2><div class="card"><ol><li>Pilih menu <b>Materi Kontekstual</b> untuk belajar menyusun model SPLTV dari transaksi nyata.</li><li>Di setiap contoh, buka tab Amati Gambar, Identifikasi, dan Susun Model. Isi pemisalan dan tiga persamaan (contoh: <code>2x + y + z = 19000</code>), lalu klik Periksa Jawaban.</li><li>Pembahasan terbuka setelah mencoba. Klik Langkah berikutnya untuk melihat solusi bertahap.</li><li>Menu <b>Soal TKA</b>: kerjakan 5 soal berurutan. Jawaban boleh diubah sebelum menekan Selesaikan. Tiap soal bernilai 20 poin.</li><li>Progres tersimpan otomatis di browser. Tombol Beranda ada di bagian atas.</li></ol></div></section>
+</main>
+<script>
+const $=s=>document.querySelector(s);
+const fmt=n=>'Rp'+Number(n).toLocaleString('id-ID');
+let store={};try{store=JSON.parse(localStorage.getItem('spltv')||'{}')}catch(e){}
+const save=()=>{try{localStorage.setItem('spltv',JSON.stringify(store))}catch(e){}};
+function show(id){document.querySelectorAll('section').forEach(s=>s.classList.toggle('on',s.id==id));document.querySelectorAll('nav button').forEach((b,i)=>b.classList.toggle('on',['home','materi','tka','help'][i]==id));if(id=='home')home();if(id=='tka')renderQ();scrollTo(0,0)}
+function home(){const l=store.last;$('#lastres').innerHTML=l?`<b>📊 Hasil belajar terakhir:</b> skor ${l.s}/100 (${l.s}%), ${l.b} soal benar, ${l.r} perlu diperbaiki.`:'📊 Hasil belajar: belum ada. Mulai dari menu Soal TKA setelah mempelajari materi.'}
+function confetti(){for(let i=0;i<36;i++){const e=document.createElement('span');e.className='conf';e.textContent=['🎉','⭐','🎊','✨'][i%4];e.style.left=Math.random()*100+'vw';e.style.animationDelay=Math.random()*1.2+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),4500)}}
+
+/* ---------- MATERI ---------- */
+const C=[
+{t:'Contoh 1: Menentukan Harga Makanan di Kantin Sekolah',scene:'🏫 Kantin Sekolah',nm:['roti','susu','donat'],em:['🍞','🥛','🍩'],lb:['A','B','C'],tx:[[2,1,1,19000],[1,2,1,21000],[1,1,2,20000]],sol:[4000,6000,5000]},
+{t:'Contoh 2: Belanja Perlengkapan Sekolah di Koperasi',scene:'🏪 Koperasi Sekolah',nm:['buku','pulpen','pensil'],em:['📒','🖊️','✏️'],lb:['A','B','C'],tx:[[2,1,1,14000],[1,2,1,13000],[1,1,2,11000]],sol:[4500,3500,1500]},
+{t:'Contoh 3: Paket Jajanan untuk Kegiatan Kelas',scene:'🎒 Kegiatan Kelas',nm:['air','roti','buah'],em:['💧','🍞','🍉'],lb:['A','B','C'],tx:[[2,1,1,16000],[1,2,1,19000],[1,1,2,18000]],sol:[2750,5750,4750],extra:[3,2,4]}];
+const V=['x','y','z'];
+const eqs=(r)=>r.slice(0,3).map((c,i)=>(c>1?c:'')+V[i]).join(' + ')+' = '+fmt(r[3]);
+const txt=(c,r)=>r.slice(0,3).map((q,i)=>q+' '+c.em[i]).join(' + ')+' = '+fmt(r[3]);
+function num(s){s=String(s).toLowerCase().replace(/rp|\s/g,'');if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,'');s=s.replace(',','.');const m=/^(-?\d+(\.\d+)?)(rb|ribu|k)?$/.exec(s);if(!m)return NaN;return parseFloat(m[1])*(m[3]?1000:1)}
+function parseEq(s){s=s.toLowerCase().replace(/\s/g,'').replace(/rp/g,'').replace(/(\d)\.(?=\d{3}(\D|$))/g,'$1');const p=s.split('=');if(p.length!=2||!p[0])return null;const co={};const re=/([+-]?)(\d*(?:\.\d+)?)\*?([a-z])/g;if(p[0].replace(re,'')!=='')return null;let m;while((m=re.exec(p[0]))){co[m[3]]=(co[m[3]]||0)+(m[1]=='-'?-1:1)*(m[2]===''?1:parseFloat(m[2]))}let r=num(p[1]);if(isNaN(r))return null;if(r<1000)r*=1000;return{co,r}}
+function checkEqs(v,c){const ps=v.map(parseEq);if(ps.some(p=>!p))return false;const L=[...new Set(ps.flatMap(p=>Object.keys(p.co)))];if(L.length!=3)return false;
+return [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]].some(pm=>{const u=new Set();return ps.every(p=>{const i=c.tx.findIndex((t,k)=>!u.has(k)&&[0,1,2].every(j=>(p.co[L[pm[j]]]||0)==t[j])&&p.r==t[3]);if(i<0)return false;u.add(i);return true})})}
+function steps(c){const S=c.tx.reduce((a,t)=>a+t[3],0),T=S/4,n=c.nm,s=c.sol;
+const st=[`<b>Pemisalan.</b> Misalkan x = harga 1 ${n[0]}, y = harga 1 ${n[1]}, z = harga 1 ${n[2]}.`,
+`<b>Model matematika.</b><br>${c.tx.map((t,i)=>`(${i+1}) ${eqs(t)}`).join('<br>')}`,
+`<b>Eliminasi.</b> Jumlahkan ketiga persamaan: 4x + 4y + 4z = ${fmt(S)}, sehingga <b>x + y + z = ${fmt(T)}</b>.`,
+`<b>Substitusi.</b> Tulis (1) sebagai x + (x + y + z) = ${fmt(c.tx[0][3])}, jadi x + ${fmt(T)} = ${fmt(c.tx[0][3])}, maka x = ${fmt(s[0])}.<br>Dari (2): y + ${fmt(T)} = ${fmt(c.tx[1][3])}, maka y = ${fmt(s[1])}.<br>Dari (3): z + ${fmt(T)} = ${fmt(c.tx[2][3])}, maka z = ${fmt(s[2])}.`,
+`<b>Verifikasi dan interpretasi.</b> ${c.tx.map((t,i)=>`(${i+1}) ${t[0]}(${s[0]})+${t[1]}(${s[1]})+${t[2]}(${s[2]}) = ${t[3]} ✓`).join('<br>')}<br>Harga satuan: ${n[0]} ${fmt(s[0])}, ${n[1]} ${fmt(s[1])}, ${n[2]} ${fmt(s[2])}.`];
+if(c.extra){const e=c.extra;st.push(`<b>Pertanyaan tambahan.</b> ${e[0]}(${s[0]}) + ${e[1]}(${s[1]}) + ${e[2]}(${s[2]}) = <b>${fmt(e[0]*s[0]+e[1]*s[1]+e[2]*s[2])}</b>`)}return st}
+function mrender(){$('#mlist').innerHTML=C.map((c,i)=>`<div class="card" id="m${i}"><h3>${c.t}</h3>
+<div class="tabs">${['Amati Gambar','Identifikasi Informasi','Susun Model Matematika','Lihat Pembahasan'].map((x,j)=>`<button class="btn ${j?'':'on'}" onclick="mtab(${i},${j})">${x}</button>`).join('')}</div>
+<div class="mp" id="m${i}p0"><div class="scene" style="background:var(--sky);border-color:var(--blue)"><b style="font-size:1rem">${c.scene}</b><br>${c.em.join(' ')}<div>${c.lb.map((l,k)=>`<span class="tx">${['Transaksi','Pembelian','Paket'][i]} ${l}<br>${txt(c,c.tx[k])}</span>`).join('')}</div></div></div>
+<div class="mp" id="m${i}p1" hidden><table><tr><th></th>${c.nm.map((n,k)=>`<th>${c.em[k]} ${n}</th>`).join('')}<th>Total</th></tr>${c.tx.map((t,k)=>`<tr><th>${c.lb[k]}</th><td>${t[0]}</td><td>${t[1]}</td><td>${t[2]}</td><td>${fmt(t[3])}</td></tr>`).join('')}</table><p>Diketahui: jumlah tiap barang dan total bayar. Ditanya: harga satuan ${c.nm.join(', ')}${c.extra?', dan total biaya 3 air, 2 roti, 4 buah':''}.</p></div>
+<div class="mp" id="m${i}p2" hidden><p>Tuliskan pemisalan dan tiga persamaan (angka boleh 19000 atau 19.000).</p><input type="text" id="mv${i}" placeholder="Pemisalan, mis: x = harga ${c.nm[0]}, y = ..., z = ..."><input type="text" id="me${i}0" placeholder="Persamaan 1 (${c.lb[0]})"><input type="text" id="me${i}1" placeholder="Persamaan 2 (${c.lb[1]})"><input type="text" id="me${i}2" placeholder="Persamaan 3 (${c.lb[2]})"><button class="btn p" onclick="mcheck(${i})">Periksa Jawaban</button><div class="fb" id="mf${i}"></div></div>
+<div class="mp" id="m${i}p3" hidden><div id="ms${i}"></div><button class="btn n" id="mb${i}" onclick="mnext(${i})">Langkah berikutnya</button></div></div>`).join('');C.forEach(c=>c.tried=false);C.forEach(c=>c.k=0)}
+function mtab(i,j){if(j==3&&!C[i].tried){alert('Coba kerjakan dulu di tab Susun Model Matematika, lalu klik Periksa Jawaban.');return}
+document.querySelectorAll(`#m${i} .mp`).forEach((p,k)=>p.hidden=k!=j);document.querySelectorAll(`#m${i} .tabs .btn`).forEach((b,k)=>b.classList.toggle('on',k==j));if(j==3&&!C[i].k)mnext(i)}
+function mcheck(i){const c=C[i];const v=document.getElementById('mv'+i).value.toLowerCase(),e=[0,1,2].map(k=>document.getElementById(`me${i}${k}`).value);c.tried=true;
+const pv=c.nm.every(n=>v.includes(n.split(' ')[0])),pe=checkEqs(e,c),f=document.getElementById('mf'+i);
+f.innerHTML=(pv?'✅ Pemisalan memuat ketiga barang. ':'⚠️ Pemisalan belum tepat: sebutkan variabel untuk '+c.nm.join(', ')+'. ')+'<br>'+(pe?'✅ Benar! Tiga persamaanmu sesuai dengan transaksi.':'❌ Belum tepat. Periksa koefisien (jumlah barang) dan total harga tiap transaksi.')+'<br>Silakan buka tab Lihat Pembahasan.';f.className='fb '+(pv&&pe?'ok pop':'no');if(pv&&pe)confetti()}
+function mnext(i){const c=C[i],st=steps(c);if(c.k<st.length){$('#ms'+i).insertAdjacentHTML('beforeend',`<div class="step">${st[c.k]}</div>`);c.k++}if(c.k>=st.length)$('#mb'+i).disabled=true}
+mrender();
+
+/* ---------- TKA ---------- */
+let qi=0;let A=store.a||(store.a={});
+const Q1=[['Persamaan transaksi Aldi dapat ditulis 3x + y + z = 35.000, dengan x nasi, y es teh, z gorengan.',1,'Aldi membeli 3 nasi, 1 es teh, 1 gorengan: 3x + y + z = 35.000.'],['Harga satu porsi nasi adalah Rp10.000.',1,'Selisih (3) dan (1): x − 2y = 4.000. Dengan eliminasi lengkap diperoleh x = 10.000, y = 3.000, z = 2.000.'],['Harga satu gorengan adalah Rp3.000.',0,'Gorengan Rp2.000, bukan Rp3.000.'],['Satu nasi + satu es teh + satu gorengan seharga Rp16.000.',0,'10.000 + 3.000 + 2.000 = Rp15.000.'],['Substitusi x = 10.000, y = 3.000, z = 2.000 ke transaksi Budi menghasilkan Rp20.000.',1,'10.000 + 2(3.000) + 2(2.000) = 20.000 ✓.']];
+const Q2=[['Model transaksi Tono: 3b + p + g = 20.000 (b buku, p pulpen, g penggaris).',1,'Tono membeli 3 buku, 1 pulpen, 1 penggaris: benar.'],['Mengurangkan persamaan Tono dengan persamaan Sinta menghilangkan g dan menghasilkan b − p = 2.000.',1,'(3b + p + g) − (2b + 2p + g) = b − p = 20.000 − 18.000 = 2.000.'],['Harga satu buku Rp4.000.',0,'Penyelesaian: b = 5.000, p = 3.000, g = 2.000.'],['Koefisien g pada persamaan Rudi sama dengan koefisien g pada persamaan Sinta.',0,'Rudi membeli 3 penggaris (koefisien 3), Sinta 1 penggaris (koefisien 1).'],['Satu buku, satu pulpen, dan satu penggaris seharga Rp10.000.',1,'5.000 + 3.000 + 2.000 = 10.000.']];
+const Q3=[2,2,3,3000,8000];
+const Q5L=['Persamaan hasil P2 − P1','Persamaan hasil P3 − P2','Harga satu air mineral','Harga 1 air mineral + 1 snack + 1 buah','Harga satu snack'];
+const Q5R=['Rp5.000','n − a = 2','Rp12.000','f − n = −1','Rp3.000'],Q5K=[1,3,4,2,0];
+const L='ABCDE';
+function renderQ(){const b=$('#tkabox');
+const pct=Math.round(qi/5*100);
+let h=`<h2>📝 Soal TKA</h2><div class="bar"><i style="width:${(qi+1)*20}%"></i></div><p>Soal ${qi+1} dari 5 · jawab sebelum menekan Selesaikan</p><div class="card">`;
+if(qi==0){const a=A.q1||[];h+=`<h3>Soal 1 · Pilihan Ganda Kompleks</h3><p>Di kantin, Rina membeli 2 nasi, 3 es teh, 1 gorengan seharga Rp31.000. Budi membeli 1 nasi, 2 es teh, 2 gorengan seharga Rp20.000. Aldi membeli 3 nasi, 1 es teh, 1 gorengan seharga Rp35.000. Misalkan x nasi, y es teh, z gorengan.</p><p><b>Pilih semua jawaban yang benar.</b></p>`+Q1.map((o,i)=>`<label class="opt"><input type="checkbox" ${a.includes(i)?'checked':''} onchange="tg(${i},this.checked)"><span><b>${L[i]}.</b> ${o[0]}<div class="fb" id="o${i}"></div></span></label>`).join('')+`<button class="btn p" onclick="chk1()">Periksa Jawaban</button>`}
+if(qi==1){const a=A.q2||[];h+=`<h3>Soal 2 · Benar atau Salah</h3><p>Koperasi sekolah menjual buku (b), pulpen (p), dan penggaris (g). Sinta membeli 2 buku, 2 pulpen, 1 penggaris seharga Rp18.000. Rudi membeli 1 buku, 1 pulpen, 3 penggaris seharga Rp14.000. Tono membeli 3 buku, 1 pulpen, 1 penggaris seharga Rp20.000.</p><table>`+Q2.map((o,i)=>`<tr><td style="text-align:left">${i+1}. ${o[0]}</td><td><label><input type="radio" name="b${i}" ${a[i]==1?'checked':''} onchange="A.q2=A.q2||[];A.q2[${i}]=1;save()"> Benar</label> <label><input type="radio" name="b${i}" ${a[i]==0?'checked':''} onchange="A.q2=A.q2||[];A.q2[${i}]=0;save()"> Salah</label></td></tr>`).join('')+`</table>`}
+if(qi==2){const a=A.q3||[];const f=(i,p)=>`<input class="s" type="text" value="${a[i]||''}" placeholder="${p}" oninput="A.q3=A.q3||[];A.q3[${i}]=this.value;save()">`;
+h+=`<h3>Soal 3 · Melengkapi Isian</h3><p>Harga semangkuk bakso (a), mie ayam (m), dan es teh (t) belum diketahui. Transaksi (harga dalam ribuan rupiah):</p><p>(1) 2a + m + t = 25<br>(2) a + 2m + t = 23<br>(3) a + m + ${f(0,'?')} t = 20</p><p>Eliminasi (1) − (2): a − m = ${f(1,'?')}<br>Eliminasi (2) − (3): m − t = ${f(2,'?')}<br>Harga es teh: Rp ${f(3,'rupiah')}<br>Harga bakso: Rp ${f(4,'rupiah')}</p><small>Angka boleh ditulis 3000, 3.000, atau 3 (untuk ribuan).</small>`}
+if(qi==3){const q=A.q4||(A.q4={t:'',r:[0,0,0,0]});h+=`<h3>Soal 4 · Uraian Singkat</h3><p>Tiga kelompok membeli perlengkapan di toko: Kelompok I membeli 2 spidol, 1 kertas, 1 lem seharga Rp17.000. Kelompok II membeli 1 spidol, 2 kertas, 3 lem seharga Rp18.000. Kelompok III membeli 3 spidol, 1 kertas, 2 lem seharga Rp25.000.</p><p>Tentukan (1) variabel, (2) tiga persamaan, (3) harga satuan, (4) kesimpulan sesuai konteks.</p><textarea rows="8" oninput="A.q4.t=this.value;save()" placeholder="Ketik proses penyelesaianmu di sini...">${q.t}</textarea><button class="btn n" onclick="$('#key').hidden=false">Lihat Kunci dan Rubrik</button><div id="key" hidden class="step"><b>Kunci:</b> Misalkan s spidol, k kertas, l lem. 2s + k + l = 17.000; s + 2k + 3l = 18.000; 3s + k + 2l = 25.000. Dari (1) l = 17.000 − 2s − k. Substitusi ke (2): 5s + k = 33.000. Substitusi ke (3): s + k = 9.000. Eliminasi: 4s = 24.000, s = 6.000, k = 3.000, l = 2.000. Kesimpulan: spidol Rp6.000, kertas Rp3.000, lem Rp2.000.<br><b>Rubrik (nilai diri 0–5 per aspek, maksimal 20):</b>${['Ketepatan pemodelan','Ketepatan proses penyelesaian','Ketepatan hasil','Interpretasi jawaban'].map((r,i)=>`<br>${r}: <select class="s" style="width:80px" onchange="A.q4.r[${i}]=+this.value;save()">${[0,1,2,3,4,5].map(v=>`<option ${q.r[i]==v?'selected':''}>${v}</option>`).join('')}</select>`).join('')}<br><small>Jawaban dengan cara berbeda tetap benar jika model dan hasil tepat.</small></div>`}
+if(qi==4){const a=A.q5||[];h+=`<h3>Soal 5 · Menjodohkan</h3><p>Panitia kelas membeli air mineral (a), snack (n), dan buah (f). P1: 2a + n + f = 15.000. P2: a + 2n + f = 17.000. P3: a + n + 2f = 16.000 (dalam ribuan: 15, 17, 16). Pasangkan tiap pernyataan dengan pilihan yang sesuai.</p>`+Q5L.map((l,i)=>`<div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center"><span>${i+1}. ${l}</span><select onchange="A.q5=A.q5||[];A.q5[${i}]=this.value;save()"><option value="">— pilih —</option>${Q5R.map((r,j)=>`<option value="${j}" ${a[i]==j&&a[i]!==undefined&&a[i]!==''?'selected':''}>${L[j]}. ${r}</option>`).join('')}</select></div>`).join('')}
+h+=`</div><div style="display:flex;gap:8px;justify-content:space-between"><button class="btn" ${qi?'':'disabled'} onclick="qi--;renderQ()">◀ Sebelumnya</button>${qi<4?'<button class="btn p" onclick="qi++;renderQ()">Soal berikutnya ▶</button>':'<button class="btn p" onclick="finish()">✅ Selesaikan</button>'}</div>`;b.innerHTML=h}
+function tg(i,c){A.q1=A.q1||[];A.q1=A.q1.filter(x=>x!=i);if(c)A.q1.push(i);save()}
+function chk1(){const a=A.q1||[];Q1.forEach((o,i)=>{const ok=a.includes(i)==!!o[1];$('#o'+i).innerHTML=(ok?'✅ ':'❌ ')+(o[1]?'Pernyataan ini benar. ':'Pernyataan ini salah. ')+o[2];$('#o'+i).className='fb '+(ok?'ok':'no')})}
+function sc(){const a=A,s=[];
+s[0]=Q1.reduce((t,o,i)=>t+((a.q1||[]).includes(i)==!!o[1]?4:0),0);
+s[1]=Q2.reduce((t,o,i)=>t+((a.q2||[])[i]===o[1]?4:0),0);
+s[2]=Q3.reduce((t,k,i)=>{const v=num((a.q3||[])[i]||'');return t+(!isNaN(v)&&(v==k||v*1000==k||v==k*1000)?4:0)},0);
+s[3]=a.q4?a.q4.r.reduce((x,y)=>x+y,0):0;
+s[4]=Q5K.reduce((t,k,i)=>t+(((a.q5||[])[i]!==undefined&&(a.q5||[])[i]!==''&&+(a.q5||[])[i]===k)?4:0),0);return s}
+function finish(){const s=sc(),tot=s.reduce((x,y)=>x+y,0),ben=s.filter(x=>x==20).length;store.last={s:tot,b:ben,r:5-ben};save();
+const msg=tot>=80?'Luar biasa! Kamu sudah menguasai SPLTV. Pertahankan! 🌟':tot>=60?'Bagus! Sedikit lagi. Pelajari pembahasan yang masih keliru. 💪':'Jangan menyerah. Ulangi materi kontekstual, lalu coba lagi. 📚';
+const ex=['Jawaban benar: A, B, E. Pemisalan dan model sesuai transaksi; x = 10.000, y = 3.000, z = 2.000; D salah karena jumlahnya 15.000; C salah karena gorengan 2.000.','Urutan benar: 1 Benar, 2 Benar, 3 Salah, 4 Salah, 5 Benar. Solusi: b = 5.000, p = 3.000, g = 2.000.','Isian: 2; 2; 3; Rp3.000 (t); Rp8.000 (a). Dari a = m + 2 dan m = t + 3 diperoleh a = t + 5; substitusi ke (3): 4t + 8 = 20, t = 3.','Solusi: s = 6.000, k = 3.000, l = 2.000. Nilai ditentukan rubrik (pemodelan, proses, hasil, interpretasi).','Pasangan: 1–B (n − a = 2), 2–D (f − n = −1), 3–E (Rp3.000), 4–C (Rp12.000), 5–A (Rp5.000). Solusi: a = 3.000, n = 5.000, f = 4.000.'];
+$('#tkabox').innerHTML=`<h2>🏆 Hasil Belajar</h2><div class="card" style="text-align:center"><div class="big">${tot} / 100</div><p><b>${tot}%</b> · ${ben} soal benar · ${5-ben} perlu diperbaiki</p><p>${msg}</p></div>`+s.map((x,i)=>`<details ${x<20?'open':''}><summary>${x==20?'✅':'📌'} Soal ${i+1}: ${x}/20</summary><div class="step">${ex[i]}</div></details>`).join('')+`<div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn p" onclick="A=store.a={};save();qi=0;renderQ()">🔁 Ulangi Latihan</button><button class="btn n" onclick="show('home')">🏠 Beranda</button></div>`;if(tot>=60)confetti()}
+home();
+</script></body></html>
